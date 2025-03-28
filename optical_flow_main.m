@@ -138,5 +138,5 @@ divergence_threshold = 0.005;
 n_contours = 10;
 
 % run the source/sink plots and save the video as an mp4 file
-[divergence_tensor,tracked_positions] = save_tracked_contour_video(u_tensor(:,:,:), v_tensor(:,:,:), shifted_data(:,:,:), 'source_sink_video.mp4', sigma, temporal_window, divergence_threshold, n_contours,mask);
+[divergence_tensor,tracked_positions] = improved_tracked_contour_video(u_tensor(:,:,:), v_tensor(:,:,:), shifted_data(:,:,:), 'source_sink_video_WF_2.mp4', sigma, temporal_window, divergence_threshold, n_contours,mask);
 
